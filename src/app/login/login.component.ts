@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  showLogin: boolean = true;
+  myFunction() {
+    debugger;
+    console.log(this.showLogin);
+    this.showLogin = !this.showLogin;
+    console.log(this.showLogin);
+  }
+
 }

@@ -6,18 +6,19 @@
     font-family: 'Poppins', sans-serif;
 }
 .main_box{
-    position: relative;
+    /* position: relative;
     background-color: rgba(0, 0, 0, 0.698);
     background-size: cover;
     height: 100vh;
-    width: 100%; 
+    width: 100%;  */
 }
 .main_box .sidebar_menu{
     position: fixed;
     height: 100vh;
     width: 280px;
     left: -280px;
-    background: rgba(255,255,255, 0.1);
+    opacity: 80%;
+    background-color: #191919;
     box-shadow: 0 0 6px rgba(255, 255, 255, 1);
 }
 .sidebar_menu .logo{
@@ -98,6 +99,10 @@
     opacity: 1;
 
 }
+
+.button_one{
+    height: 0!important;
+  }
 .sidebar_menu .button_two i{
     color: #fff;
     font-size: 25px;
