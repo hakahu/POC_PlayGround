@@ -26,17 +26,35 @@ html, body {
     top: 50%; left: 50%;
     width: 15rem;
     margin-left: -7.5rem;
-    border: solid black 2px;
     border-radius: 10px;
     padding: 15px 30px;
-
   }
 
-  .background_login {
+  .framed3 {
+    position: absolute;
+    top: 50%;
+    width: 15rem;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  .background_forms {
     opacity: 80%;
     background-color: #191919;
   }
-  
+
+  .social_media{
+    margin-top: 5px;
+    min-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .social_media a{
+    margin-right: 5px;
+  }
+
   .logo {
     margin-top: -9em;
     cursor: default;
@@ -127,7 +145,7 @@ html, body {
     background-size: cover;
   }
   
-  #toggle--login:checked ~ .form--signup { left:200%; visibility:hidden; }
-  #toggle--signup:checked ~ .form--login { left:-100%; visibility:hidden; }
+  #toggle--login:checked ~ .form--signup { left:-100%; display:none; }
+  #toggle--signup:checked ~ .form--login { left:-100%; display:none; }
   
   @media (height:300px){.legal,.photo-cred{display:none}}

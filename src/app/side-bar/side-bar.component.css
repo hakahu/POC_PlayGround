@@ -99,6 +99,10 @@
     opacity: 1;
 
 }
+
+.button_one{
+    height: 0!important;
+  }
 .sidebar_menu .button_two i{
     color: #fff;
     font-size: 25px;
