@@ -1,0 +1,13 @@
+body{
+    background-color: beige;
+}
+
+.list-group{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1{
+    text-align: center;
+}
