@@ -19,11 +19,11 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
     LoginComponent,
     SideBarComponent,
     PaymentComponent,
-    MenuItemComponent
+    MenuItemComponent,
     OrderingComponent,
     MenuComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
     NotFoundPageComponent
   ],
   imports: [
