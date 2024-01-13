@@ -1,11 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Button with Plus Icon</title>
+</head>
+<body>
 
-<h1>Speisekarte</h1>
-<div class="list-group">
-    <button type="button" class="list-group-item list-group-item-action active">
-      Cras justo odio
-    </button>
-    <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-    <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-    <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-    <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
-</div>
+    <h1>Ordering Menu</h1>
+    <div class="menu" >
+        <a *ngFor="let menuItem of menu" class="menuItem" href="#">{{ menuItem.name }}</a>
+    </div>
+
+    <div class="list-group">
+        <a type="a" class="list-group-item list-group-item-action">
+            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
+            Lasagne
+            <span class="price">€12.99</span>
+            <button class="add-button"><i class="fas fa-plus"></i></button>
+        </a>
+        <a type="a" class="list-group-item list-group-item-action">
+            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
+            Pizza
+            <span class="price">€16.99</span>
+            <button class="add-button"><i class="fas fa-plus"></i></button>
+        </a>
+        <a type="a" class="list-group-item list-group-item-action">
+            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
+            Pelmeni
+            <span class="price">€10.99</span>
+            <button class="add-button"><i class="fas fa-plus"></i></button>
+        </a>
+        <a type="a" class="list-group-item list-group-item-action">
+            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
+            Gurkensuppe
+            <span class="price">€8.99</span>
+            <button class="add-button"><i class="fas fa-plus"></i></button>
+        </a>
+        <a type="a" class="list-group-item list-group-item-action">
+            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
+            Tschebureki
+            <span class="price">€7.99</span>
+            <button class="add-button"><i class="fas fa-plus"></i></button>
+        </a>
+    </div>
+
+    <app-footer></app-footer>
+
+</body>
+</html>
