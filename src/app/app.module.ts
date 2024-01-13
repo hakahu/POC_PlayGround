@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderingComponent } from './ordering/ordering.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OrderingComponent } from './ordering/ordering.component';
     LoginComponent,
     SideBarComponent,
     PaymentComponent,
-    OrderingComponent
+    OrderingComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,
