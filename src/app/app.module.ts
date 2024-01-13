@@ -9,6 +9,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderingComponent } from './ordering/ordering.component';
 import { MenuComponent } from './menu/menu.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MenuComponent } from './menu/menu.component';
     SideBarComponent,
     PaymentComponent,
     OrderingComponent,
-    MenuComponent
+    MenuComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
