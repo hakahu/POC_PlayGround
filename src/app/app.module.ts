@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     SideBarComponent,
     PaymentComponent,
+    MenuItemComponent
     OrderingComponent,
     MenuComponent,
     NavBarComponent,

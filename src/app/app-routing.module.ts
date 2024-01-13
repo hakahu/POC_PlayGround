@@ -6,6 +6,7 @@ import { OrderingComponent } from './ordering/ordering.component';
 import { MenuComponent } from './menu/menu.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 const routes: Routes = [
 
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'ordering',
     component: OrderingComponent
+  },
+  {
+    path: 'menu-item',
+    component: MenuItemComponent
   },
   {
     path: 'menu',

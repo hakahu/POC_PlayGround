@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.sizeselection {
+  flex: 0.5;
+}
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.sizecheckbox {
+  flex: 2;
+}
+.product-dropdown {
+  width: 20vw;
+}
+.button-wrapper {
+  display: flex;
+  gap: 8px;
+}
+.price{
+    font-size: 20px;
+}
