@@ -1,1 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+
+html, body{
+    background-color: #70C1B3 !important;
+}

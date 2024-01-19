@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderingComponent } from './ordering/ordering.component';
+import { MenuComponent } from './menu/menu.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 
 const routes: Routes = [
@@ -29,8 +31,17 @@ const routes: Routes = [
     component: MenuItemComponent
   },
   {
+    path: 'menu',
+    component: MenuComponent
+  },
+  {
+  path: 'anime',
+  component: LandingPageComponent
+  },
+  {
     path: '**',
-    redirectTo: ''
+    component: NotFoundPageComponent
+    // redirectTo: ''
   },
 
 ];
