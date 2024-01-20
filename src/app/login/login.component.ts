@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Todos } from 'src/models/models';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,10 @@ import { Todos } from 'src/models/models';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-    constructor(private http: HttpClient){
+
+
+
+    constructor(private http: HttpClient, private formBuilder: FormBuilder){
 
     }
 
@@ -23,4 +28,33 @@ export class LoginComponent implements OnInit {
         }
       });
     }
+
+    signupForm = this.formBuilder.group({
+      Username: '',
+      Email: '',
+      Password: ''
+    });
+
+    loginForm = this.formBuilder.group({
+      Email: '',
+      Password: ''
+    });
+
+
+
+    onSubmitSignUp(): void {
+      console.log(this.signupForm.value);
+      this.refreshForm();
+    }
+
+    onSubmitLogin(): void {
+      console.log(this.loginForm.value);
+      this.refreshForm();
+    }
+
+    refreshForm() {
+      this.loginForm.reset();
+      this.signupForm.reset();
+    }
+
 }
