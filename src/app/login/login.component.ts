@@ -1,10 +1,60 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Todos } from 'src/models/models';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+
+
+
+    constructor(private http: HttpClient, private formBuilder: FormBuilder){
+
+    }
+
+    ngOnInit(): void {
+      this.http.get<Todos[]>('https://jsonplaceholder.typicode.com/todos').subscribe(data => 
+      {
+
+        console.log(data);
+        
+        for(var item of data){
+          console.log(item.title);
+        }
+      });
+    }
+
+    signupForm = this.formBuilder.group({
+      Username: '',
+      Email: '',
+      Password: ''
+    });
+
+    loginForm = this.formBuilder.group({
+      Email: '',
+      Password: ''
+    });
+
+
+
+    onSubmitSignUp(): void {
+      console.log(this.signupForm.value);
+      this.refreshForm();
+    }
+
+    onSubmitLogin(): void {
+      console.log(this.loginForm.value);
+      this.refreshForm();
+    }
+
+    refreshForm() {
+      this.loginForm.reset();
+      this.signupForm.reset();
+    }
 
 }
