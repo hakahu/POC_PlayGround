@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-</head>
-<body>
-    <div>
-        <h4>Card One</h4>
-    </div>
-    <div>
-        <h4>Card Two</h4>
-    </div>
-    <div>
-        <h4>Card Three</h4>
-    </div>
-    <div>
-        <h4>Card Four</h4>
-    </div>
-    <button type="button" style="width:80px;"class="btn btn-primary" (click)="refreshPage()">
-        <i class="bi bi-arrow-clockwise"></i>
-      </button>
-      <button class="btn btn-secondary">
-        <i class="bi bi-activity"></i>
-      </button>
+<div class="card">
+    <p-dataView [value]="items" layout="grid">
+      <ng-template let-item pTemplate="gridItem">
+        <div class="p-col-12 p-md-3">
+          <div class="product-grid-item card">
+            <div class="product-grid-item-top">
+              <h1>{{item.name}}</h1>
+            </div>
+            <div class="product-grid-item-content">
+              {{item.description}}
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-dataView>
+  </div>
   
-</body>
-</html>

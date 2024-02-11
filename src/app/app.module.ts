@@ -15,6 +15,13 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { BrowserAnimationsModule }  
+    from "@angular/platform-browser/animations"; 
+import { DataViewModule } from "primeng/dataview";
+import { IonicModule } from '@ionic/angular'; 
 
 @NgModule({
   declarations: [
@@ -27,14 +34,19 @@ import { ButtonModule } from 'primeng/button';
     MenuComponent,
     NavBarComponent,
     FooterComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    DataViewModule,  
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
