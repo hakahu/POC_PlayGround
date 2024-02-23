@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
 
@@ -37,6 +38,11 @@ const routes: Routes = [
   {
   path: 'anime',
   component: LandingPageComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
+    // redirectTo: ''
   },
   {
     path: '**',

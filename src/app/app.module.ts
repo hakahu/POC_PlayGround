@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ButtonModule } from 'primeng/button';
     MenuComponent,
     NavBarComponent,
     FooterComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
