@@ -39,7 +39,7 @@ import { CartComponent } from './cart/cart.component';
     NotFoundPageComponent,
     LandingPageComponent,
     Menu2Component,
-    Menu3Component
+    Menu3Component,
     NotFoundPageComponent,
     CartComponent
   ],
