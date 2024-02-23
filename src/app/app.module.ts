@@ -21,6 +21,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BrowserAnimationsModule }  
     from "@angular/platform-browser/animations"; 
 import { DataViewModule } from "primeng/dataview";
+import { Menu2Component } from './menu2/menu2.component';
+import { Menu3Component } from './menu3/menu3.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { DataViewModule } from "primeng/dataview";
     NavBarComponent,
     FooterComponent,
     NotFoundPageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    Menu2Component,
+    Menu3Component
   ],
   imports: [
     BrowserModule,
