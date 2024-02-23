@@ -14,34 +14,10 @@
     </div>
 
     <div class="list-group">
-        <a type="a" class="list-group-item list-group-item-action">
-            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
-            Lasagne
-            <span class="price">€12.99</span>
-            <button class="add-button"><i class="fas fa-plus"></i></button>
-        </a>
-        <a type="a" class="list-group-item list-group-item-action">
-            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
-            Pizza
-            <span class="price">€16.99</span>
-            <button class="add-button"><i class="fas fa-plus"></i></button>
-        </a>
-        <a type="a" class="list-group-item list-group-item-action">
-            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
-            Pelmeni
-            <span class="price">€10.99</span>
-            <button class="add-button"><i class="fas fa-plus"></i></button>
-        </a>
-        <a type="a" class="list-group-item list-group-item-action">
-            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
-            Gurkensuppe
-            <span class="price">€8.99</span>
-            <button class="add-button"><i class="fas fa-plus"></i></button>
-        </a>
-        <a type="a" class="list-group-item list-group-item-action">
-            <img src="../../assets/food/lasagne.jpg" alt="Lasagne Image" class="food-image">
-            Tschebureki
-            <span class="price">€7.99</span>
+        <a type="a" class="list-group-item list-group-item-action" *ngFor="let dish of dishes">
+            <img src="{{dish.link}}" alt="{{dish.alt}}" class="food-image">
+            {{dish.name}}
+            <span class="price">{{dish.price}}</span>
             <button class="add-button"><i class="fas fa-plus"></i></button>
         </a>
     </div>
