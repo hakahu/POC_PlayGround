@@ -15,6 +15,14 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { BrowserAnimationsModule }  
+    from "@angular/platform-browser/animations"; 
+import { DataViewModule } from "primeng/dataview";
+import { Menu2Component } from './menu2/menu2.component';
+import { Menu3Component } from './menu3/menu3.component';
 import { CartComponent } from './cart/cart.component';
 
 @NgModule({
@@ -29,14 +37,22 @@ import { CartComponent } from './cart/cart.component';
     NavBarComponent,
     FooterComponent,
     NotFoundPageComponent,
+    LandingPageComponent,
+    Menu2Component,
+    Menu3Component
+    NotFoundPageComponent,
     CartComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    DataViewModule,  
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

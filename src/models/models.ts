@@ -8,3 +8,9 @@ export class Todos {
 ​​    title: string = "";
 // ​​​    userId: string = ""
 }
+
+export interface Car {
+    brand: string;
+    year: number;
+    imageUrl: string;
+  }

@@ -8,6 +8,9 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { CartComponent } from './cart/cart.component';
+import { authGuard } from './auth/auth.guard';
+import { Menu2Component } from './menu2/menu2.component';
+import { Menu3Component } from './menu3/menu3.component';
 
 const routes: Routes = [
 
@@ -21,23 +24,33 @@ const routes: Routes = [
   },
   {
     path: 'payment',
-    component: PaymentComponent
+    component: PaymentComponent,
+    canActivate:[authGuard]
   },
   {
     path: 'ordering',
-    component: OrderingComponent
+    component: OrderingComponent,
+    canActivate:[authGuard]
   },
   {
     path: 'menu-item',
-    component: MenuItemComponent
+    component: MenuItemComponent,
+    canActivate:[authGuard]
   },
   {
     path: 'menu',
-    component: MenuComponent
+    component: MenuComponent,
+    canActivate:[authGuard]
   },
   {
-  path: 'anime',
-  component: LandingPageComponent
+    path: 'menu2',
+    component: Menu2Component,
+    canActivate:[authGuard]
+  },
+  {
+    path: 'menu3',
+    component: Menu3Component,
+    canActivate:[authGuard]
   },
   {
     path: 'cart',
