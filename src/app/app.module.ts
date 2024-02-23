@@ -21,7 +21,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BrowserAnimationsModule }  
     from "@angular/platform-browser/animations"; 
 import { DataViewModule } from "primeng/dataview";
-import { IonicModule } from '@ionic/angular'; 
 
 @NgModule({
   declarations: [
@@ -46,7 +45,7 @@ import { IonicModule } from '@ionic/angular';
     ButtonModule,
     InputTextModule,
     DataViewModule,  
-    FormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
