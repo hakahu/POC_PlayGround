@@ -23,6 +23,7 @@ import { BrowserAnimationsModule }
 import { DataViewModule } from "primeng/dataview";
 import { Menu2Component } from './menu2/menu2.component';
 import { Menu3Component } from './menu3/menu3.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,8 @@ import { Menu3Component } from './menu3/menu3.component';
     LandingPageComponent,
     Menu2Component,
     Menu3Component
+    NotFoundPageComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
