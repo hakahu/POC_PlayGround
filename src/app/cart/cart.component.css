@@ -11,7 +11,7 @@ td.text-end{
     width: 5rem;
 }
 td,th,label,.input-group{
-    background-color: rgb(245, 190, 10);
+    background-color: rgb(211, 211, 211);
 }
 button{
     background-color: gray;
@@ -44,7 +44,7 @@ a {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: rgb(245, 190, 10);
+    background-color: rgb(211, 211, 211);
     background-clip: border-box;
     border: 1px solid #eff0f2;
     border-radius: 1rem;
