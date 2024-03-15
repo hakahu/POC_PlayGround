@@ -1,45 +1,42 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
 
-<!DOCTYPE html>
-<html lang="en" dir="lrt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-  <body>
-    <input type="radio" checked id="toggle--login" name="toggle" class="ghost" />
-    <input type="radio" id="toggle--signup" name="toggle" class="ghost" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Signin Template · Bootstrap v5.3</title>
 
-    <img class="logo framed" src="https://www.tumblr.com/images/logo/logo_large.png?v=7ea0eb57dd627a95f82be5bde0c43d59" alt="Tumblr logo" />
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
+    
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-    <form  [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()" class="form form--login framed2 background_forms">    
-      <input id="Email" type="email" formControlName="Email" class="input input--top" placeholder="Email">
-      <input id="Password" type="password" formControlName="Password" class="input" placeholder="Password">
-      <button class="button" type="submit" class="input input--submit">Login</button>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
 
-      <label for="toggle--signup" class="text text--small text--centered" (click)="refreshForm()">New? <b>Sign up</b></label>
-      <!-- <div class="social_media text--centered">
-        <a href="#"><i class="fa-brands fa-discord fa-bounce" style="color: #7289da;"></i></a>
-        <a href="#"><i class="fa-brands fa-reddit-alien fa-bounce" style="color: #FF5700;"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram fa-bounce" style="color: #DD2A7B;"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter fa-bounce"></i></a>
-      </div> -->
-    </form>
-
-    <form [formGroup]="signupForm" (ngSubmit)="onSubmitSignUp()" class="form form--signup framed2 background_forms">
-      <input id="Username" type="email" formControlName="Email" placeholder="Email" class="input input--top" />
-      <input id="Email" type="password" formControlName="Password" placeholder="Password" class="input" />
-      <input id="Password" type="text" formControlName="Username" placeholder="Username" class="input" />
-      <button class="button" type="submit" class="input input--submit">Sign up</button>
-
-      <label for="toggle--login" class="text text--small text--centered" (click)="refreshForm()">Not new? <b>Log in</b></label>
-      <!-- <div class="social_media text--centered">
-        <a href="#"><i class="fa-brands fa-discord fa-bounce" style="color: #7289da;"></i></a>
-        <a href="#"><i class="fa-brands fa-reddit-alien fa-bounce" style="color: #FF5700;"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram fa-bounce" style="color: #DD2A7B;"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter fa-bounce"></i></a>
-      </div> -->
-    </form>
-
-    <div class="fullscreen-bg"></div>
-  </body>
+        <div class="form-check text-start my-3">
+          <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember me
+          </label>
+        </div>
+        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
+      </form>
+    </main>
+    </body>
 </html>
