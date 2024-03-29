@@ -6,16 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit{
-  refreshPage(): void {
-    location.reload();
-  }
+
   ngOnInit()
   {
     
   }
-
-
-
   
-
 }

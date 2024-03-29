@@ -9,6 +9,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { CartComponent } from './cart/cart.component';
 import { authGuard } from './auth/auth.guard';
+import { SignupComponent } from './signup/signup.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 const routes: Routes = [
 
@@ -21,15 +23,23 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'signup',
+    component: SignupComponent
+  },
+  {
+    path: 'mainpage',
+    component: MainpageComponent
+  },
+  {
     path: 'payment',
     component: PaymentComponent,
     canActivate:[authGuard]
   },
-  {
-    path: 'ordering',
-    component: OrderingComponent,
-    canActivate:[authGuard]
-  },
+  // {
+  //   path: 'ordering',
+  //   component: OrderingComponent,
+  //   canActivate:[authGuard]
+  // },
   {
     path: 'menu-item',
     component: MenuItemComponent,

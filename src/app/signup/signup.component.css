@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.login-container input[type="submit"]:hover {
+    opacity: 0.9;
+}
+.alternative {
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+.alternative::before {
+    content: 'ODER';
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 10px;
+    color: #888;
+}
+.social-login {
+    display: flex;
+    justify-content: center;
+}
+.social-login button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.social-login button:hover {
+    opacity: 0.9;
+}
+.social-login img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+.footer {
+    color: #777;
+    font-size: 14px;
+    margin-top: 40px;
+}

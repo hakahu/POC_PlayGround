@@ -12,9 +12,7 @@ export class ProductService {
   }
 
   getAllProducts(){
-    this.http.get<Dishes>('https://reqres.in/api/posts').subscribe(response => {
-        console.log(response);
-    })
+    return this.http.get<Dishes[]>('http://localhost:3001/test');
   }
 
   getProductById(){

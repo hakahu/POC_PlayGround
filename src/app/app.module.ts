@@ -22,6 +22,9 @@ import { BrowserAnimationsModule }
     from "@angular/platform-browser/animations"; 
 import { DataViewModule } from "primeng/dataview";
 import { CartComponent } from './cart/cart.component';
+import { ProductService } from './services/product.service';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import { CartComponent } from './cart/cart.component';
     NotFoundPageComponent,
     LandingPageComponent,
     NotFoundPageComponent,
-    CartComponent
+    CartComponent,
+    MainpageComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,7 @@ import { CartComponent } from './cart/cart.component';
     DataViewModule,  
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

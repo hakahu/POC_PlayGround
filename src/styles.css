@@ -6,5 +6,8 @@
 
 html, body{
     background-color: #70C1B3 !important;
+    /* background-image: url('../src/assets/background-example.jpg'); */
+    background-repeat: no-repeat;
+    background-size:cover;
     font-family: monospace;
 }
