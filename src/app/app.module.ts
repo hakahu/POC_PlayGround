@@ -25,6 +25,8 @@ import { CartComponent } from './cart/cart.component';
 import { ProductService } from './services/product.service';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { SignupComponent } from './signup/signup.component';
+import { CartModalComponent } from './cart-modal/cart-modal.component';
+import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { SignupComponent } from './signup/signup.component';
     NotFoundPageComponent,
     CartComponent,
     MainpageComponent,
-    SignupComponent
+    SignupComponent,
+    CartModalComponent,
+    QrScannerComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,7 @@ import { SignupComponent } from './signup/signup.component';
     DataViewModule,  
     FormsModule
   ],
-  providers: [ProductService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

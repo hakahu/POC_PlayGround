@@ -9,7 +9,6 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <!-- <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a> -->
           <a class="nav-link" href="">Home</a>
         </li>
         <li class="nav-item">
@@ -30,10 +29,14 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/cart">Cart</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/qr">QR</a>
+        </li>
       </ul>
     </div>
     <div class="navbar-icons d-flex justify-content-end" style="margin-right:20px">
-      <i class="fas fa-cart-shopping" style="margin-right:20px; cursor: pointer;"></i>        
+      <i class="fas fa-cart-shopping" style="margin-right:20px; cursor: pointer;" (click)="cartModal.openModal()"></i>
+      <app-cart-modal #cartModal></app-cart-modal>      
       <i class="fas fa-user" style="margin-right:20px; cursor: pointer;"></i>
     </div>
 </nav>

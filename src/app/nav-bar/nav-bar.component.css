@@ -1,0 +1,6 @@
+.navbar{
+    position: -webkit-sticky; /* Für Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Inhalten schwebt */
+}

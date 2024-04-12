@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Todos } from 'src/models/models';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
 
 
 
-    constructor(private http: HttpClient, private formBuilder: FormBuilder){
+    constructor(private http: HttpClient, private formBuilder: FormBuilder, private router: Router){
 
     }
 
@@ -55,6 +56,11 @@ export class LoginComponent implements OnInit {
     refreshForm() {
       this.loginForm.reset();
       this.signupForm.reset();
+    }
+
+    myFunction(){
+      console.log("Du Pimmelfechter.");
+      this.router.navigate(['/qr']);      
     }
 
 }

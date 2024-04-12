@@ -1,0 +1,41 @@
+<!-- cart-modal.component.html -->
+<div class="modal" tabindex="-1" role="dialog" *ngIf="showModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Warenkorb</h5>
+          <!-- ToDo: Brauchen wir so einen schließen Button? -->
+          <!-- <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          <!-- Deine Warenkorb-Items hier -->
+          <div class="modal-body">
+            <div class="cart-item" *ngFor="let item of cartItems">
+              <div class="item-info">
+                <span class="item-title">{{ item.title }}</span>
+              </div>
+              <div class="item-quantity">
+                <select class="form-select" [(ngModel)]="item.quantity" (change)="updateTotal()">
+                  <option *ngFor="let num of [].constructor(30); let i = index" [value]="i+1">{{ i+1 }}</option>
+                </select>
+              </div>
+              <div class="item-price">
+                <span>{{ item.price }} €</span>
+              </div>
+            </div>
+            <div class="cart-total">
+              <span>Gesamtsumme: </span><span>{{ totalSum }} €</span>
+            </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="closeModal()">Schließen</button>
+          <a type="button" href="/payment" class="btn btn-primary">Zur Kasse gehen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

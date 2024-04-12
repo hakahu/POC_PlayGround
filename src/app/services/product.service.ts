@@ -12,7 +12,7 @@ export class ProductService {
   }
 
   getAllProducts(){
-    return this.http.get<Dishes[]>('http://localhost:3001/test');
+    return this.http.get('https://api.github.com/users/Bard');
   }
 
   getProductById(){

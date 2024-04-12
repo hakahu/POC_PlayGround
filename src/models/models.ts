@@ -16,10 +16,11 @@ export interface Car {
 }
 
 export interface Dishes {
+    id:string;
     ingredients: string[];
     description: string;
-    name: string,
-    price: string;
+    title: string,
+    price: number;
     link: string;
-    alt: string;
+    quantity: number;
 }

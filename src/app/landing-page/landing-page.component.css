@@ -9,18 +9,18 @@ body, html {
 
 .container {
   display: flex;
-  min-height: 93vh;
-  max-height: 93vh;
-  min-width: 100vh;
+  height: 100vh; /* Stellt sicher, dass der Container die volle Bildschirmhöhe einnimmt */
+  width: 100vw; /* Stellt sicher, dass der Container die volle Bildschirmbreite einnimmt */
 }
 
 .left-side, .right-side {
-  flex: 1;
+  flex: 1; /* Jede Seite nimmt genau die Hälfte des Containers ein */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 
 .right-side {
   background-color: #00000076;

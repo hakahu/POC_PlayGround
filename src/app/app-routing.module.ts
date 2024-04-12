@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { authGuard } from './auth/auth.guard';
 import { SignupComponent } from './signup/signup.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
 
 const routes: Routes = [
 
@@ -53,6 +54,11 @@ const routes: Routes = [
   {
     path: 'cart',
     component: CartComponent
+    // redirectTo: ''
+  },
+  {
+    path: 'qr',
+    component: QrScannerComponent
     // redirectTo: ''
   },
   {
