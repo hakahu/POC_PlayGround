@@ -1,0 +1,52 @@
+.qr-scanner-container {
+    position: relative;
+    padding: 20px;
+    margin: 0 auto; /* Margin oben und unten hinzugefügt */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 90vh; /* Höhe des Containers erhöht */
+    width: 100%;
+    text-align: center; /* Zentriert den Inhalt horizontal */
+}
+
+.video-element {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.432);
+    margin-bottom: 20px;
+    animation: fade-in 0.5s ease;
+    height: calc(100% - 60px); /* Höhe des Videos angepasst (60px entspricht der Höhe des Scan-Buttons und dem Abstand zum unteren Rand des Containers) */
+}
+
+.scan-button {
+    width: 50%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    margin-bottom: 0px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+    display: inline-block; /* Button als Inline-Block-Element */
+}
+
+.scan-button:hover {
+    background-color: #555;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    pointer-events: none;
+}

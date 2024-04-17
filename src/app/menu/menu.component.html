@@ -114,7 +114,8 @@
                         <div class="btn-group d-flex flex-wrap justify-content-center">
                           <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2 btn-custom">
                             <i class="fa-solid fa-plus"></i>
-                            <span class="button-text">Hinzufügen</span>
+                            <span class="button-text"  (click)="menuItem.openModal()">Hinzufügen</span>
+                            <app-menu-item #menuItem></app-menu-item>
                           </button>
                           <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2 btn-custom">
                             <i class="fa-solid fa-bookmark"></i>

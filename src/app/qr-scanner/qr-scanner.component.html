@@ -1,5 +1,5 @@
-<div>
-    <video #videoElement width="400" height="300" style="border: 1px solid black;"></video>
-    <button (click)="startScan()">QR Code scannen</button>
+<div class="qr-scanner-container">
+    <video #videoElement class="video-element" ></video>
+    <button class="scan-button" (click)="startScan()">QR Code scannen</button>
+    <div class="overlay"></div>
 </div>
-  
