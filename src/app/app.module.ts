@@ -27,6 +27,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { SignupComponent } from './signup/signup.component';
 import { CartModalComponent } from './cart-modal/cart-modal.component';
 import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
@@ -59,7 +61,7 @@ import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
     DataViewModule,  
     FormsModule
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

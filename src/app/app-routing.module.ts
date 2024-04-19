@@ -42,11 +42,6 @@ const routes: Routes = [
   //   canActivate:[authGuard]
   // },
   {
-    path: 'menu-item',
-    component: MenuItemComponent,
-    canActivate:[authGuard]
-  },
-  {
     path: 'menu',
     component: MenuComponent,
     canActivate:[authGuard]

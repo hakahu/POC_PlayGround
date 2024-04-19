@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Dishes } from 'src/models/models';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-menu-item',
@@ -7,8 +9,9 @@ import { Component } from '@angular/core';
 })
 export class MenuItemComponent {
   showModal: boolean = false; // Variable zur Steuerung der Modal-Anzeige
+  lastItem: Dishes = { id: '', title: '', description: '', price: 0.00, link: '', quantity: 0, ingredients: [] };
 
-  constructor() {}
+  constructor(private cartService: CartService) {}
 
   // Methode zum Öffnen des Modals
   openModal() {
@@ -18,5 +21,21 @@ export class MenuItemComponent {
   // Methode zum Schließen des Modals
   closeModal() {
     this.showModal = false;
+  }
+
+  openItemView(item: Dishes){
+    console.log("Fick dich huan");
+    this.lastItem = item;
+    this.openModal();
+  }
+
+  addToCartService(){
+    this.cartService.addToCart(this.lastItem);
+    this.triggerAnimation();
+    this.closeModal();
+  }
+
+  triggerAnimation() {
+    this.cartService.triggerAnimation();
   }
 }
