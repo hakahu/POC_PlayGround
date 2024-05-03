@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
+import { Dishes } from 'src/models/models';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,13 @@ export class CartService {
 
   constructor() { }
 
-  addToCart(item: any) {
+  addToCart(item: Dishes) {
     const currentItems = this.cartItemsSubject.value;
     const updatedItems = [...currentItems, item];
+
+    // ToDo: Fix problem with multiple items with same title
+    console.log(updatedItems);
+
     this.cartItemsSubject.next(updatedItems);
   }
 

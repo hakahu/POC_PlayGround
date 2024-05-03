@@ -12,8 +12,11 @@
         <div class="modal-body">
           <!-- Deine Warenkorb-Items hier -->
           <div class="modal-body">
-            <div class="cart-item" *ngFor="let item of cartItems">
+            <div class="cart-item" style="  border-bottom: 2px;
+            " *ngFor="let item of cartItems">
               <div class="item-info">
+                <img class="bd-placeholder-img img-custom" width="100%" height="225"
+                      src={{item.link}}>
                 <span class="item-title">{{ item.title }}</span>
               </div>
               <div class="item-quantity">
@@ -22,7 +25,7 @@
                 </select>
               </div>
               <div class="item-price">
-                <span>{{ item.price }} €</span>
+                <span>{{ item.price * item.quantity }} €</span>
               </div>
             </div>
             <div class="cart-total">
