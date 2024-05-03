@@ -28,10 +28,10 @@ export class NavBarComponent {
 
   constructor(private cartService: CartService) {
     this.subscription = this.cartService.addItem$.subscribe(() => {
-      this.cartState = 'large'; // Ändern Sie den Zustand auf 'large', um die Animation auszulösen
+      this.cartState = 'large'; // Zustand wird auf 'large' geändert, um die Animation auszulösen
       setTimeout(() => {
-        this.cartState = 'small'; // Setzen Sie den Zustand nach einer kurzen Verzögerung wieder auf 'small'
-      }, 350); // Ändern Sie hier den Wert der Verzögerung nach Bedarf
+        this.cartState = 'small'; // Zustand wird nach einer kurzen Verzögerung wieder auf 'small' gesetzt
+      }, 350); // Verzögerung in Millisekunden
     });
   }
 

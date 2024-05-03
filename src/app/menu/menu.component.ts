@@ -40,12 +40,7 @@ export class MenuComponent implements OnInit {
   ];
 
   dishes = [];
-
   filteredDishes = [];
-
-  // addToCart(newItem: { id: string; title: string; description: string; price: number; link: string; quantity: number; ingredients: never[]; }) {
-  //   this.menuItem.addToCart(newItem);
-  // }
 
   menu: MenuItem[] = [
       new MenuItem("Alles"),
@@ -55,6 +50,7 @@ export class MenuComponent implements OnInit {
       new MenuItem("Getränke"),
   ];
 
+  // Example of how to call Service to make Get-Request
   async getDishes() {
     await this.productService.getAllProducts().subscribe({
       next: (result) => {

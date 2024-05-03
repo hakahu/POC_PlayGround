@@ -8,7 +8,9 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./menu-item.component.css']
 })
 export class MenuItemComponent {
-  showModal: boolean = false; // Variable zur Steuerung der Modal-Anzeige
+  // Variable zur Steuerung der Modal-Anzeige
+  showModal: boolean = false;
+  // Leeres lastItem wird initiiert
   lastItem: Dishes = { id: '', title: '', description: '', price: 0.00, link: '', quantity: 0, ingredients: [] };
 
   constructor(private cartService: CartService) {}
@@ -23,19 +25,17 @@ export class MenuItemComponent {
     this.showModal = false;
   }
 
+  // Vor dem Öffnen des Modals wird das zuletzt hinzugefügte Item gespeichert
   openItemView(item: Dishes){
-    console.log("Fick dich huan");
     this.lastItem = item;
     this.openModal();
   }
 
+  // Das Item wird dem CartService übergeben, 
+  // eine Animation für das Warenkorb-Icon wird ausgeführt und das Modal wird geschlossen
   addToCartService(){
     this.cartService.addToCart(this.lastItem);
-    this.triggerAnimation();
-    this.closeModal();
-  }
-
-  triggerAnimation() {
     this.cartService.triggerAnimation();
+    this.closeModal();
   }
 }

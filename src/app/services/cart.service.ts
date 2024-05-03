@@ -11,7 +11,6 @@ export class CartService {
   constructor() { }
 
   addToCart(item: any) {
-    console.log("fuck youuu");
     const currentItems = this.cartItemsSubject.value;
     const updatedItems = [...currentItems, item];
     this.cartItemsSubject.next(updatedItems);
