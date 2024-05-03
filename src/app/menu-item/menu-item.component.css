@@ -43,12 +43,13 @@ body {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  cursor: auto;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #f8f9fa;
-  margin: 15% auto; /* 15% from the top and centered */
+  /* background-color: #f8f9fa; */
+  margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -66,9 +67,10 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.close:hover,
+.close.hover,
 .close:focus {
   color: black;
   text-decoration: none;

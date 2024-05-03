@@ -127,6 +127,14 @@ body {
   position: relative;
 }
 
+.btn-custom{
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.btn-custom:hover{
+  background-color: rgba(128, 128, 128, 0.521);
+}
+
 .btn-back {
   display: flex; /* Nutzt Flexbox für Ausrichtung */
   align-items: center; /* Zentriert Inhalte vertikal */

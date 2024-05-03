@@ -89,7 +89,7 @@
         <div class="container-fluid"> <!-- oder "container" je nach gewünschter Breite -->
           <div class="row">
             <div class="d-flex justify-content-end">
-              <a href="/previousPage" class="btn btn-sm btn-outline-secondary rounded mb-2 btn-back">
+              <a href="/previousPage" class="btn btn-sm rounded mb-2 btn-back">
                 <i class="fas fa-arrow-left"></i>
                 <span class="button-text">Zurück</span>
               </a>
@@ -109,13 +109,13 @@
                       <p class ="card-price" style="margin-left:10px;color: red;">{{item.price}} €</p>
                       <div class="d-flex justify-content-center align-items-center">
                         <div class="btn-group d-flex flex-wrap justify-content-center">
-                          <button  type="button" class="btn btn-sm btn-outline-secondary rounded mb-2 btn-custom">
+                          <button  type="button" class="btn btn-sm rounded mb-2 btn-custom">
                             <i class="fa-solid fa-plus"></i>
                             <!-- ToDo: click Event muss nach oben verschoben werden, verursacht aber geilen Bug -->
                             <span class="button-text" (click)="menuItem.openItemView(item)">Hinzufügen</span>
                             <app-menu-item #menuItem></app-menu-item>
                           </button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2 btn-custom">
+                          <button type="button" class="btn btn-sm rounded mb-2 btn-custom">
                             <i class="fa-solid fa-bookmark"></i>
                             <span class="button-text">Merken</span>
                           </button>
