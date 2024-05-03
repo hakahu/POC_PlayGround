@@ -5,12 +5,11 @@
       <div class="modal-header">
         <h5 class="modal-title">Produkt</h5>
         <!-- ToDo: Brauchen wir so einen schließen Button? -->
-        <!-- <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-          <span aria-hidden="true">&times;</span>
-        </button> -->
+        <i class="fa-solid fa-circle-xmark close"  (click)="closeModal()">
+        </i>
       </div>
       <div class="modal-body">
-        <!-- Deine Warenkorb-Items hier -->
+        <!-- Inhalt des Items hier -->
         <div class="modal-body">
           <div class="container mt-5">
             <div class="row">
@@ -52,7 +51,7 @@
                     </div>
                     <div class="radio-wrapper">
                       <div class="form-check sizeselection">
-                        <input class="form-check-input" type="radio" name="pizzaGroesse" id="gross" value="gross" />
+                        <input class="form-check-input" type="radio" name="pizzaGroesse" id="gross" value="gross" checked />
                         <label class="form-check-label" for="gross"> Groß 30cm +0€</label>
                       </div>
 
