@@ -1,3 +1,5 @@
+import { DishType } from "../app/enums/enums";
+
 export class MenuItem {
     constructor(public name: string) {}
 }
@@ -23,4 +25,5 @@ export interface Dishes {
     price: number;
     link: string;
     quantity: number;
+    dishType: DishType
 }

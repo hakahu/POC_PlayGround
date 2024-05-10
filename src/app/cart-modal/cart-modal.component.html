@@ -26,10 +26,16 @@
               <div class="item-price">
                 <span>{{ item.price * item.quantity }} €</span>
               </div>
+              <div class="remove-button">
+                <button type="button" class="btn btn-danger" (click)="removeFromCartService(item)">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>              
             </div>
             <div class="cart-total">
               <span>Gesamtsumme: </span><span>{{ totalSum }} €</span>
             </div>
+
           </div>
           
         </div>
