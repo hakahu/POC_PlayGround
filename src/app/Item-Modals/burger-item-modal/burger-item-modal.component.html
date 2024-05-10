@@ -1,0 +1,258 @@
+<p>burger-item-modal works!</p>
+<!-- cart-modal.component.html -->
+<div class="modal" tabindex="-1" role="dialog" *ngIf="showModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produkt</h5>
+        <!-- ToDo: Brauchen wir so einen schließen Button? -->
+        <i class="fa-solid fa-circle-xmark close" (click)="closeModal()"> </i>
+      </div>
+      <div class="modal-body">
+        <!-- Inhalt des Items hier -->
+        <div class="modal-body">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-10">
+                <img
+                  src=".\assets\food\burger.jpg"
+                  alt="Artikelbild"
+                  class="img-fluid"
+                  width="650"
+                  height="250"
+                />
+              </div>
+              <div class="wraper">
+                <div class="col-md-6">
+                  <h2>-Burger-</h2>
+                  <hr />
+
+                  <div class="details">
+                    <h4>Beschreibung des Produkts:</h4>
+                    <p>Burger Blyat</p>
+                  </div>
+                  <hr />
+                  <h4 for="product">Wähle eine Brotsorte aus:</h4>
+                  <select name="product-dropdown" class="pizza" id="pizza">
+                    <option value="Matterhorn">Vollkorn</option>
+                    <option value="CheeseBurger">Sauerteig</option>
+                    <option value="bbq">Sesam Sauerteig</option>
+                  </select>
+
+                  <div class="col mt-4">
+                    <h4>Extras:</h4>
+                    <div class="checkbox-wrapper">
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="bulette"
+                          value="bulette"
+                        />
+                        <label class="form-check-label" for="bulette">
+                          Patty
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >2,50 €</label
+                        >
+                      </div>
+
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="pilze"
+                          value="pilze"
+                        />
+                        <label class="form-check-label" for="pilze">
+                          Pilze
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="oliven"
+                          value="oliven"
+                        />
+                        <label class="form-check-label" for="oliven">
+                          Oliven
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="zwiebeln"
+                          value="zwiebeln"
+                        />
+                        <label class="form-check-label" for="zwiebeln">
+                          Zwiebeln
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="paprika"
+                          value="paprika"
+                        />
+                        <label class="form-check-label" for="paprika">
+                          Paprika
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="schinken"
+                          value="schinken"
+                        />
+                        <label class="form-check-label" for="schinken">
+                          Schinken
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="ananas"
+                          value="ananas"
+                        />
+                        <label class="form-check-label" for="ananas">
+                          Ananas
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="salami"
+                          value="salami"
+                        />
+                        <label class="form-check-label" for="salami">
+                          Salami
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="col mt-4">
+                    <h4>Beilagen:</h4>
+                    <div class="checkbox-wrapper">
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="pommes"
+                          value="pommes"
+                        />
+                        <label class="form-check-label" for="pommes">
+                          Portion Pommes</label
+                        >
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >2,50 €</label
+                        >
+                      </div>
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="nachos"
+                          value="nachos"
+                        />
+                        <label class="form-check-label" for="nachos">
+                          Portion Nachos</label
+                        >
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >2,50 €</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col mt-4">
+                      <h4 for="dip">Dip:</h4>
+                      <select name="dip-dropdown" class="dip" id="dip">
+                        <option value="salsa">Salsa</option>
+                        <option value="salsa">Chili</option>
+                        <option value="salsa">Mayo</option>
+                        <option value="salsa">Ketchub</option>
+                        <option value="salsa">Käse</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="col mt-3">
+                    <p class="price"><strong>Preis:</strong> 199.99€</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      (click)="closeModal()"
+                    >
+                      Schließen
+                    </button>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      (click)="addToCartService()"
+                      >Zum Warenkorb hinzufügen</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

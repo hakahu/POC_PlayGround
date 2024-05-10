@@ -1,0 +1,102 @@
+<p>burger-item-modal works!</p>
+<!-- cart-modal.component.html -->
+<div class="modal" tabindex="-1" role="dialog" *ngIf="showModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produkt</h5>
+        <!-- ToDo: Brauchen wir so einen schließen Button? -->
+        <i class="fa-solid fa-circle-xmark close" (click)="closeModal()"> </i>
+      </div>
+      <div class="modal-body">
+        <!-- Inhalt des Items hier -->
+        <div class="modal-body">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-10">
+                <img
+                  src=".\assets\food\carbonara.jpg"
+                  alt="Artikelbild"
+                  class="img-fluid"
+                  width="650"
+                  height="250"
+                />
+              </div>
+              <div class="wraper">
+                <div class="col-md-6">
+                  <h2>-Pasta-</h2>
+                  <hr />
+
+                  <div class="details">
+                    <h4>Beschreibung des Produkts:</h4>
+                    <p>Hier hasch dei Paschta</p>
+                  </div>
+                  <hr />
+                  <div class="col mt-4">
+                    <h4>Extras:</h4>
+                    <div class="checkbox-wrapper">
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="bulette"
+                          value="bulette"
+                        />
+                        <label class="form-check-label" for="bulette">
+                          Parmesan
+                        </label>
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >0,50 €</label
+                        >
+                      </div>
+                    </div>
+                    <h4>Beilage:</h4>
+                    <div class="checkbox-wrapper">
+                      <div class="form-check sizecheckbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="salat"
+                          value="salat"
+                        />
+                        <label class="form-check-label" for="salat">
+                          Beilagen Salat</label
+                        >
+                        <label
+                          class="item-price"
+                          style="margin-left: 10px; color: red"
+                          >2,50 €</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="col mt-3">
+                    <p class="price"><strong>Preis:</strong> 199.99€</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      (click)="closeModal()"
+                    >
+                      Schließen
+                    </button>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      (click)="addToCartService()"
+                      >Zum Warenkorb hinzufügen</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<p>item-modals works!</p>
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary" (click)="burgerItemModal.openModal()">Burger</button>
+        <app-burger-item-modal #burgerItemModal></app-burger-item-modal>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary" (click)="pastaItemModal.openModal()">Pasta</button>
+        <app-pasta-item-modal #pastaItemModal></app-pasta-item-modal>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary">Salad</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary" (click)="menuItem.openModal()">Pizza</button>
+        <app-menu-item #menuItem></app-menu-item>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary">Button 5</button>
+      </div>
+    </div>
+  </div>
+  

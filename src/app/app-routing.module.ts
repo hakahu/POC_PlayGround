@@ -6,12 +6,15 @@ import { OrderingComponent } from './ordering/ordering.component';
 import { MenuComponent } from './menu/menu.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
+import { MenuItemComponent } from './Item-Modals/menu-item/menu-item.component';
 import { CartComponent } from './cart/cart.component';
 import { authGuard } from './auth/auth.guard';
 import { SignupComponent } from './signup/signup.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
+import { ItemModalsComponent } from './Item-Modals/item-modals.component';
+
+
 
 const routes: Routes = [
 
@@ -54,6 +57,11 @@ const routes: Routes = [
   {
     path: 'qr',
     component: QrScannerComponent
+    // redirectTo: ''
+  },
+  {
+    path: 'item-modals',
+    component: ItemModalsComponent
     // redirectTo: ''
   },
   {

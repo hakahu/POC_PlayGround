@@ -12,7 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
+import { MenuItemComponent } from './Item-Modals/menu-item/menu-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
@@ -28,6 +28,12 @@ import { SignupComponent } from './signup/signup.component';
 import { CartModalComponent } from './cart-modal/cart-modal.component';
 import { QrScannerComponent } from './qr-scanner/qr-scanner.component';
 import { CartService } from './services/cart.service';
+import { PastaItemModalComponent } from './Item-Modals/pasta-item-modal/pasta-item-modal.component';
+import { BurgerItemModalComponent } from './Item-Modals/burger-item-modal/burger-item-modal.component';
+import { DesertItemModalComponent } from './Item-Modals/desert-item-modal/desert-item-modal.component';
+import { SaladItemModalComponent } from './Item-Modals/salad-item-modal/salad-item-modal.component';
+import { ItemModalsComponent } from './Item-Modals/item-modals.component';
+// import { ItemModalsComponent } from './item-modals/item-modals.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,12 @@ import { CartService } from './services/cart.service';
     MainpageComponent,
     SignupComponent,
     CartModalComponent,
-    QrScannerComponent
+    QrScannerComponent,
+    PastaItemModalComponent,
+    BurgerItemModalComponent,
+    DesertItemModalComponent,
+    SaladItemModalComponent,
+    ItemModalsComponent
   ],
   imports: [
     BrowserModule,

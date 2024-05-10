@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Dishes } from 'src/models/models';
-import { CartService } from '../services/cart.service';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-menu-item',
