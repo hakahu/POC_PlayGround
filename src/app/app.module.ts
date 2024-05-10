@@ -22,7 +22,7 @@ import { BrowserAnimationsModule }
     from "@angular/platform-browser/animations"; 
 import { DataViewModule } from "primeng/dataview";
 import { CartComponent } from './cart/cart.component';
-import { ProductService } from './services/product.service';
+import { ProductService } from '../services/product.service';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { SignupComponent } from './signup/signup.component';
 import { CartModalComponent } from './cart-modal/cart-modal.component';

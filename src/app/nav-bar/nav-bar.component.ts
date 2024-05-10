@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { CartService } from '../services/cart.service';
+import { CartService } from '../../services/cart.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({

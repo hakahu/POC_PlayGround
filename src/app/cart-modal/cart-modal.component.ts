@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Dishes } from 'src/models/models';
-import { CartService } from '../services/cart.service';
+import { CartService } from '../../services/cart.service';
+import { DishType } from '../enums/enums';
 
 @Component({
   selector: 'app-cart-modal',
@@ -8,6 +9,7 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./cart-modal.component.css']
 })
 export class CartModalComponent implements OnInit {
+
   showModal: boolean = false;
   cartItems: Dishes[] = [
     // { id: '0', title: 'Lasagne', description: 'Eine original italienische Lasagne mit Hackfleisch.', price: 9.99, link: 'https://img.chefkoch-cdn.de/rezepte/745721177147257/bilder/668335/crop-960x540/lasagne.jpg', quantity: 2, ingredients: []},
@@ -32,7 +34,7 @@ export class CartModalComponent implements OnInit {
 
   totalSum: number = 0;
 
-  onMenuItemAddedToCart(newItem: {itemId: string, itemTitle: string, itemDescription: string, itemPrice: number, itemLink: string, itemQuantity: number, itemIngredients: string[]}) {
+  onMenuItemAddedToCart(newItem: {itemId: string, itemTitle: string, itemDescription: string, itemPrice: number, itemLink: string, itemQuantity: number, itemIngredients: string[], itemDishType: DishType}) {
     this.cartItems.push({
       id: newItem.itemId,
       title: newItem.itemTitle,
@@ -40,7 +42,8 @@ export class CartModalComponent implements OnInit {
       price: newItem.itemPrice,
       link: newItem.itemLink,
       quantity: newItem.itemQuantity,
-      ingredients: newItem.itemIngredients
+      ingredients: newItem.itemIngredients,
+      dishType: newItem.itemDishType
     });
   }
 
@@ -55,5 +58,9 @@ export class CartModalComponent implements OnInit {
 
   closeModal() {
     this.showModal = false;
+  }
+
+  removeFromCartService(item: Dishes){
+    this.cartService.removeFromCart(item);
   }
 }

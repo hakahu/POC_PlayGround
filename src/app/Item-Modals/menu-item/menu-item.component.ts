@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Dishes } from 'src/models/models';
 import { CartService } from '../../services/cart.service';
+import { DishType } from '../enums/enums';
 
 @Component({
   selector: 'app-menu-item',
@@ -8,10 +9,8 @@ import { CartService } from '../../services/cart.service';
   styleUrls: ['./menu-item.component.css']
 })
 export class MenuItemComponent {
-  // Variable zur Steuerung der Modal-Anzeige
   showModal: boolean = false;
-  // Leeres lastItem wird initiiert
-  lastItem: Dishes = { id: '', title: '', description: '', price: 0.00, link: '', quantity: 0, ingredients: [] };
+  lastItem: Dishes = { id: '', title: '', description: '', price: 0.00, link: '', quantity: 0, ingredients: [], dishType: DishType.CUSTOM };
 
   constructor(private cartService: CartService) {}
 
