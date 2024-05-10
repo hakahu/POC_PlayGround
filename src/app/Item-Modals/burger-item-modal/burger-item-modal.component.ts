@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { CartService } from 'src/app/services/cart.service';
+import { DishType } from 'src/app/enums/enums';
 import { Dishes } from 'src/models/models';
+import { CartService } from 'src/services/cart.service';
 
 @Component({
   selector: 'app-burger-item-modal',
@@ -11,7 +12,7 @@ export class BurgerItemModalComponent {
    // Variable zur Steuerung der Modal-Anzeige
    showModal: boolean = false;
    // Leeres lastItem wird initiiert
-   lastItem: Dishes = { id: '', title: '', description: '', price: 0.00, link: '', quantity: 0, ingredients: [] };
+   lastItem: Dishes = { id: '', title: '', description: '', price: 0.00, link: '', quantity: 0, ingredients: [], dishType: DishType.CUSTOM };
  
    constructor(private cartService: CartService) {}
  

@@ -2,7 +2,6 @@ import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/cor
 import { Dishes, MenuItem } from '../../models/models';
 import { ProductService } from '../../services/product.service';
 import { HttpClient } from '@angular/common/http';
-import { MenuItemComponent } from '../menu-item/menu-item.component';
 import { DishType } from '../enums/enums';
 
 @Component({

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { DishType } from 'src/app/enums/enums';
 import { Dishes } from 'src/models/models';
-import { CartService } from '../../services/cart.service';
-import { DishType } from '../enums/enums';
+import { CartService } from 'src/services/cart.service';
 
 @Component({
   selector: 'app-menu-item',
