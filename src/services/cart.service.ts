@@ -32,10 +32,15 @@ export class CartService {
     const currentItems = this.cartItemsSubject.value;  
     const itemIndexToRemove = currentItems.findIndex(cartItem => cartItem.id === item.id);
   
-    if (itemIndexToRemove !== -1) {
-      const updatedItems = currentItems.filter((_, index) => index !== itemIndexToRemove);
-      this.cartItemsSubject.next(updatedItems);
-    }
+
+    // hier Platzhalter mit Modal logik ersetzen, bei der "ok" oder "abbrechen" ausgewählt wird
+    // if(3/1 == 0){
+      if (itemIndexToRemove !== -1) {
+        const updatedItems = currentItems.filter((_, index) => index !== itemIndexToRemove);
+        this.cartItemsSubject.next(updatedItems);
+      }
+    // }
+
   }
 
   private addItemSubject = new Subject<void>();

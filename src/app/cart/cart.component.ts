@@ -35,4 +35,8 @@ export class CartComponent implements OnInit {
       this.updateTotal();
     });
   }
+
+  removeFromCartService(item: Dishes){
+    this.cartService.removeFromCart(item);
+  }
 }

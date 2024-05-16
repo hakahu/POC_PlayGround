@@ -49,3 +49,8 @@ a {
     border: 1px solid #eff0f2;
     border-radius: 1rem;
 }
+
+.list-inline-item
+{
+    cursor: pointer;
+}

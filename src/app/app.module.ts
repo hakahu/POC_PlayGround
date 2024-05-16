@@ -33,7 +33,6 @@ import { DesertItemModalComponent } from './Item-Modals/desert-item-modal/desert
 import { SaladItemModalComponent } from './Item-Modals/salad-item-modal/salad-item-modal.component';
 import { ItemModalsComponent } from './Item-Modals/item-modals.component';
 import { CartService } from 'src/services/cart.service';
-// import { ItemModalsComponent } from './item-modals/item-modals.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +57,7 @@ import { CartService } from 'src/services/cart.service';
     BurgerItemModalComponent,
     DesertItemModalComponent,
     SaladItemModalComponent,
-    ItemModalsComponent
+    ItemModalsComponent,
   ],
   imports: [
     BrowserModule,
