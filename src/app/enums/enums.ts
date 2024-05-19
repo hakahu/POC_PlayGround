@@ -1,6 +1,6 @@
 export enum DishType {
-    PIZZA = "Main Course",
-    PASTA = "Appetizer",
+    PIZZA = "Pizza",
+    PASTA = "Pasta",
     DESSERT = "Dessert",
     SIDE_DISH = "Side Dish",
     SALAD = "Salad",
