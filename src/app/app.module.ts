@@ -33,6 +33,7 @@ import { DesertItemModalComponent } from './Item-Modals/desert-item-modal/desert
 import { SaladItemModalComponent } from './Item-Modals/salad-item-modal/salad-item-modal.component';
 import { ItemModalsComponent } from './Item-Modals/item-modals.component';
 import { CartService } from 'src/services/cart.service';
+import { PizzaItemModalComponent } from './Item-Modals/pizza-item-modal/pizza-item-modal.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { CartService } from 'src/services/cart.service';
     DesertItemModalComponent,
     SaladItemModalComponent,
     ItemModalsComponent,
+    PizzaItemModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,7 @@ import { CartService } from 'src/services/cart.service';
     DataViewModule,  
     FormsModule
   ],
-  providers: [CartService],
+  providers: [CartService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

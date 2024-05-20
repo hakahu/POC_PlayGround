@@ -1,0 +1,231 @@
+<div class="modal" tabindex="-1" role="dialog" *ngIf="showModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Produkt</h5>
+          <!-- ToDo: Brauchen wir so einen schließen Button? -->
+          <i class="fa-solid fa-circle-xmark close" (click)="closeModal()"> </i>
+        </div>
+        <div class="modal-body">
+          <!-- Inhalt des Items hier -->
+          <div class="modal-body">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-10">
+                  <img
+                    src="\assets\food\pizza.jpg"
+                    alt="Artikelbild"
+                    class="img-fluid"
+                    width="650"
+                    height="250"
+                  />
+                </div>
+                <div class="wraper">
+                  <div class="col-md-6">
+                    <h2>-Pizza Neapolitanische Art-</h2>
+  
+                    <div class="details">
+                      <h4>Beschreibung des Produkts:</h4>
+                      <p>
+                        Pizza ist ein vor dem Backen würzig belegtes Fladenbrot
+                        aus einfachem Hefeteig aus der italienischen Küche. Die
+                        heutige international verbreitete Variante mit
+                        Tomatensauce und Käse als Basis stammt vermutlich aus
+                        Neapel.
+                      </p>
+                    </div>
+                    <!-- <h4 for="product">Wähle eine Pizza aus:</h4>
+                    <select name="product-dropdown" class="pizza" id="pizza">
+                      <option value="salami">Salami 12,90€</option>
+                      <option value="schinken">Speciale 12,90€</option>
+                      <option value="bbq">Schinken BBQ 12,90€</option>
+                      <option value="fornite">Margarita 9,50€</option>
+                    </select> -->
+  
+                    <div class="col mt-4">
+                      <h4>Auswahl der Pizza-Größe:</h4>
+                      <div class="radio-wrapper">
+                        <div class="form-check sizeselection">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="pizzaGroesse"
+                            id="klein"
+                            value="klein"
+                          />
+                          <label class="form-check-label" for="klein">
+                            Klein 25cm -2€</label
+                          >
+                        </div>
+  
+                        <div class="form-check sizeselection">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="pizzaGroesse"
+                            id="mittel"
+                            value="mittel"
+                          />
+                          <label class="form-check-label" for="mittel">
+                            Mittel 28cm -1€</label
+                          >
+                        </div>
+                      </div>
+                      <div class="radio-wrapper">
+                        <div class="form-check sizeselection">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="pizzaGroesse"
+                            id="gross"
+                            value="gross"
+                            checked
+                          />
+                          <label class="form-check-label" for="gross">
+                            Groß 30cm +0€</label
+                          >
+                        </div>
+  
+                        <div class="form-check sizeselection">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="pizzaGroesse"
+                            id="famillienpackung"
+                            value="famillienpackung"
+                          />
+                          <label class="form-check-label" for="famillienpackung">
+                            Familienpizza 60cm +8€</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="col mt-4">
+                      <h4>Zusätzliche Beläge: (0,50€)</h4>
+                      <div class="checkbox-wrapper">
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="tomaten"
+                            value="tomaten"
+                          />
+                          <label class="form-check-label" for="tomaten">
+                            Tomaten
+                          </label>
+                        </div>
+  
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="pilze"
+                            value="pilze"
+                          />
+                          <label class="form-check-label" for="pilze">
+                            Pilze
+                          </label>
+                        </div>
+  
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="oliven"
+                            value="oliven"
+                          />
+                          <label class="form-check-label" for="oliven">
+                            Oliven
+                          </label>
+                        </div>
+  
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="zwiebeln"
+                            value="zwiebeln"
+                          />
+                          <label class="form-check-label" for="zwiebeln">
+                            Zwiebeln
+                          </label>
+                        </div>
+                      </div>
+                      <div class="checkbox-wrapper">
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="paprika"
+                            value="paprika"
+                          />
+                          <label class="form-check-label" for="paprika">
+                            Paprika
+                          </label>
+                        </div>
+  
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="schinken"
+                            value="schinken"
+                          />
+                          <label class="form-check-label" for="schinken">
+                            Schinken
+                          </label>
+                        </div>
+  
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="ananas"
+                            value="ananas"
+                          />
+                          <label class="form-check-label" for="ananas">
+                            Ananas
+                          </label>
+                        </div>
+  
+                        <div class="form-check sizecheckbox">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="salami"
+                            value="salami"
+                          />
+                          <label class="form-check-label" for="salami">
+                            Salami
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="col mt-3">
+                      <p class="price"><strong>Preis:</strong> 199.99€</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        (click)="closeModal()"
+                      >
+                        Schließen
+                      </button>
+                      <a
+                        type="button"
+                        class="btn btn-primary"
+                        (click)="addToCartService()"
+                        >Zum Warenkorb hinzufügen</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
